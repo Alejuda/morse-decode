@@ -162,7 +162,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## Support <a name="support"></a>
 
-If you encounter any issues or have any questions or suggestions, please open an issue on the [issue tracker](../../issues/).
+If you encounter any issues or have any questions or suggestions, please open an issue on the [issue tracker](../../../issues/).
 Furthermore, if you would like to get in touch with us, you can find our contact information in the <a href="#authors">Authors</a> section.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

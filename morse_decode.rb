@@ -3,34 +3,21 @@ binary_tree = [nil, 'E', 'T', 'I', 'A', 'N', 'M', 'S', 'U', 'R', 'W', 'D', 'K', 
 
 def decode_character(string, binary_tree)
   letter_index = 0
-  string.each_char.with_index do |char, index|
-    if char == '-'
-      letter_index = (2 * letter_index) + 2
-    elsif char == '.'
-      letter_index = (2 * letter_index) + 1
-    end
-    return (binary_tree[letter_index]).to_s if index == string.length - 1
+  string.each_char do |char|
+    letter_index = (2 * letter_index) + (char == '-' ? 2 : 1)
   end
+  binary_tree[letter_index].to_s
 end
 
 def decode_word(string, binary_tree)
-  word = ''
   word_letters = string.split
-  word_letters.each do |letter|
-    word += decode_character(letter, binary_tree)
-  end
-  word
+  word_letters.map { |letter| decode_character(letter, binary_tree) }.join
 end
 
 def decode_message(string, binary_tree)
-  message = ''
   words = string.split('   ')
-  words.each do |word|
-    message += decode_word(word, binary_tree)
-    message += ' '
-  end
-  message
+  words.map { |word| decode_word(word, binary_tree) }.join(' ')
 end
 
 string = '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...'
-print(decode_message(string, binary_tree))
+puts(decode_message(string, binary_tree))
