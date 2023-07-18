@@ -154,7 +154,7 @@ If you'd like to contribute to this project, please follow these steps:
 
 Please adhere to the coding conventions and guidelines specified in the project.
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Alejuda/morse-decode/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -162,7 +162,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## Support <a name="support"></a>
 
-If you encounter any issues or have any questions or suggestions, please open an issue on the [issue tracker](../../../issues/).
+If you encounter any issues or have any questions or suggestions, please open an issue on the [issue tracker](https://github.com/Alejuda/morse-decode/issues).
 Furthermore, if you would like to get in touch with us, you can find our contact information in the <a href="#authors">Authors</a> section.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
